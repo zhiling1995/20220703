@@ -52,7 +52,7 @@ export default {
 }
 </script>
 
-<style  scoped>
+<style lang="less"  scoped>
 .header {
         &>.top {
             background-color: #eaeaea;
