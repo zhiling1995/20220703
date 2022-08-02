@@ -130,8 +130,8 @@ less ,把less样式变为css样式，浏览器才可以识别
 
 
 5.路由组件的搭建
-vue-router
-在上面分析的时候，路由组件应该有4个：home、Search、login、Refister
+vue-router     cnpm i --save vue-router
+在上面分析的时候，路由组件应该有4个：home、Search、login、Register
 -components  文件夹：经常放置的非路由组件（公用全局组件）
 -pages|view文件夹：经常放置路由组件
 
@@ -143,9 +143,9 @@ vue-router
 1：路由组件一般放置在pages|view文件夹,非路由组件一般放置在components  文件夹
 2.路由组件一般需要在router文件夹中进行注册（使用的即为组件的名字），非路由组件在使用的时候，一般都是以标签的形式使用
 
-3：注册完路由，不管路由组件还是非路由组件都有$route、 $router属性
+3：注册完路由，不管路由组件还是非路由组件身上都有$route、 $router属性
 $route：一般获取路由信息【路径、query、params等等】
-$router:一般进行编程式导航进行路由跳转【push|replace】
+$router:一般进行编程式导航进行路由跳转【push|replace】区别：能否进行历史记录
 
 5.3路由的跳转？
 路由的跳转有两种形式：
@@ -153,7 +153,7 @@ $router:一般进行编程式导航进行路由跳转【push|replace】
 编程式导航push|replace,可以进行路由的跳转
 
 编程式导航:声明式导航能做的，编程式导航都能做
-但是编程式导航除了可以进行路由跳转，还可以做一些其他的业务逻辑
+但是编程式导航除了可以进行路由跳转，还可以做一些其他的业务逻辑(如登录之前的正则校验)
 
 
 

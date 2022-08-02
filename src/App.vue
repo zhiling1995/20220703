@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+
     <Header></Header>
-    我是根组件11
+  <!-- 路由组件出口的地方 -->
+  <router-view></router-view>
     <Footer></Footer>
     
 
@@ -11,7 +11,6 @@
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
